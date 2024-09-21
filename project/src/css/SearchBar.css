@@ -1,25 +1,195 @@
+/* Основной стиль для поиска */
 .search-bar {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .search-input {
-    width: 300px;
-    padding: 10px;
-    border-radius: 25px;
-  }
-  
-  .date-picker {
-    display: flex;
-    align-items: center;
-  }
-  
-  .date-btn, .search-btn {
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: green;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Контейнер для поля поиска и иконки */
+.search-input-container {
+  display: flex;
+  width: 100%;
+  max-width: 500px; /* Увеличиваем ширину поля поиска */
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-icon-btn {
+  background-color: white; /* Kнопка с лупой */
+  border: none;
+  background-image: url('../../group_project/frontend/assets/images/search.png');
+  background-size: 90%;
+  background-repeat: no-repeat; /* Изображение не повторяется */
+  padding: 10px 20px;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  color: white;
+}
+
+.search-icon-btn i {
+  font-size: 16px;
+}
+
+.search-icon-btn:hover {
+  background-color: #019f8e;
+}
+
+/* Всплывающее окно календаря */
+.calendar-popup {
+  background-color: #00B140; /* Зелёный фон всего блока */
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Кнопка закрытия календаря (внизу) */
+.close-calendar-btn {
+  background-color: white;
+  color: green;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-calendar-btn:hover {
+  background-color: #019f8e;
+}
+
+/* Всплывающее окно для комнат */
+.rooms-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.room-status-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.room-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.select-room-btn {
+  background-color: #00B140;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-room-btn:hover {
+  background-color: #019f8e;
+}
+
+/* Всплывающее окно для выбора времени */
+.time-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.time-slot {
+  margin-bottom: 10px;
+}
+
+/* Кнопка времени (свободна/занята) */
+.time-btn {
+  background-color: #00B140;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.time-btn.booked {
+  background-color: red; /* Красный цвет для забронированных временных слотов */
+  cursor: not-allowed;
+}
+
+.time-btn.free:hover {
+  background-color: #019f8e;
+}
+
+/* Кнопка закрытия */
+.close-btn {
+  background-color: #00B140;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.close-btn:hover {
+  background-color: #019f8e;
+}
+.date-btn {
+  background-color: #00B140; /* Ярко-зелёный цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.date-btn:hover {
+  background-color: #019f8e;
+}
