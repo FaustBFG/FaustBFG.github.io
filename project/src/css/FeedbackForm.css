@@ -1,0 +1,28 @@
+.feedback-form {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .form-input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+  
+  .send-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

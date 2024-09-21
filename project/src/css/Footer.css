@@ -1,0 +1,39 @@
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .support, .about, .partners {
+    list-style-type: none;
+  }
+  
+  h4 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  

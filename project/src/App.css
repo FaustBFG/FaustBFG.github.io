@@ -1,0 +1,13 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+.hero-section {
+  background-image: url('./assets/images/Main_background.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

@@ -1,0 +1,28 @@
+.best-for-you {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center; /* Центрируем карточки */
+    flex-wrap: wrap; /* Чтобы карточки переходили на следующую строку */
+    gap: 20px; /* Промежуток между карточками */
+  }
+  
+  .card {
+    width: 30%; /* Ширина каждой карточки */
+    min-width: 250px; /* Минимальная ширина карточки */
+    margin: 10px; /* Отступы между карточками */
+  }
+  
+  .see-more-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
