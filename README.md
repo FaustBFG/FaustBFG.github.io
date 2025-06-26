@@ -22,6 +22,8 @@ docker build -t flask-app .
 docker run -p 5000:5000 flask-app
 ```
 
+The container exposes port `5000` by default, so it forwards that port to the host.
+
 To build the image, create a network, and start the container in a single command use:
 
 ```bash
