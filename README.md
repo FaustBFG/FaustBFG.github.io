@@ -22,3 +22,11 @@ docker build -t flask-app .
 docker run -p 5000:5000 flask-app
 ```
 
+To build the image, create a network, and start the container in a single command use:
+
+```bash
+docker build -t flask-app . && \
+  docker network create flask-net && \
+  docker run --rm -p 5000:5000 --network flask-net flask-app
+```
+
