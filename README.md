@@ -12,3 +12,13 @@ python3 app.py
 ```
 
 The application exposes a `/healthcheck` route which returns `OK`.
+
+## Docker
+
+If you prefer using Docker, build the image and run it:
+
+```bash
+docker build -t flask-app .
+docker run -p 5000:5000 flask-app
+```
+
